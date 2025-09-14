@@ -127,8 +127,8 @@
         "url": "https://llm.api.cloud.yandex.net/foundationModels/v1/completion",
         "jsonParameters": true,
         "options": {},
-        "bodyParametersJson": "={\n  \"modelUri\": \"gpt://b1gdhufbi3knura441u2/yandexgpt/latest\",\n  \"completionOptions\": {\n    \"stream\": false,\n    \"temperature\": 0.7,\n    \"maxTokens\": 1000\n  },\n  \"messages\": {{ JSON.stringify($json.messages) }}\n}\n",
-        "headerParametersJson": "{\n  \"Authorization\": \"Api-Key AQVNxflx2dUfCWQkV6H8Y6vDRFbHbuUL5jmINK7n\",\n  \"Content-Type\": \"application/json\"\n}"
+        "bodyParametersJson": "={\n  \"modelUri\": \"gpt://<YOUR CATALOG ID>/yandexgpt/latest\",\n  \"completionOptions\": {\n    \"stream\": false,\n    \"temperature\": 0.7,\n    \"maxTokens\": 1000\n  },\n  \"messages\": {{ JSON.stringify($json.messages) }}\n}\n",
+        "headerParametersJson": "{\n  \"Authorization\": \"Api-Key <YOUR API KEY>\",\n  \"Content-Type\": \"application/json\"\n}"
       },
       "name": "Query YandexGPT",
       "type": "n8n-nodes-base.httpRequest",
